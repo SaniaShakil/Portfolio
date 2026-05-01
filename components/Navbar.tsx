@@ -104,10 +104,10 @@ export default function Navbar(): JSX.Element {
             {/* Language toggle */}
             <button
               onClick={toggleLanguage}
-              aria-label={`Switch to ${language === 'en' ? 'Turkish' : 'English'}`}
+              aria-label={`Switch to ${language === 'en' ? 'Italian' : 'English'}`}
               className="px-3 py-1.5 text-xs font-mono border border-border rounded-full hover:border-accent hover:text-accent transition-all"
             >
-              {language === 'en' ? 'EN' : 'TR'}
+              {language === 'en' ? 'EN' : 'IT'}
             </button>
 
             {/* Let's Talk CTA — hidden on mobile to keep header tight */}
