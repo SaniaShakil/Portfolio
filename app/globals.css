@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #1C1C1E;
+    color: #F0EFEB;
+    font-family: var(--font-jakarta), system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: rgba(232, 115, 42, 0.3);
+    color: #F0EFEB;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1C1C1E;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #3D3D43;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #E8732A;
+  }
+}
+
+/* Grain overlay */
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 128px 128px;
+}
+
+/* Solari flip board */
+.solari-char {
+  display: inline-block;
+  position: relative;
+  width: 0.7em;
+  height: 1.4em;
+  margin: 0 1px;
+  background: #2A2A2F;
+  border-radius: 2px;
+  overflow: hidden;
+  font-family: var(--font-jetbrains), monospace;
+  font-size: inherit;
+  line-height: 1.4;
+  text-align: center;
+  color: #F0EFEB;
+}
+
+.solari-char::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: rgba(28, 28, 30, 0.6);
+}
+
+@keyframes solariFlip {
+  0% { transform: rotateX(0deg); }
+  50% { transform: rotateX(-90deg); }
+  100% { transform: rotateX(0deg); }
+}
+
+.solari-flipping {
+  animation: solariFlip 0.15s ease-in-out;
+}
+
+/* Ambient glow */
+.glow-amber {
+  box-shadow: 0 0 60px rgba(232, 115, 42, 0.08), 0 0 120px rgba(232, 115, 42, 0.04);
+}
+
+.glow-amber-strong {
+  box-shadow: 0 0 40px rgba(232, 115, 42, 0.15), 0 0 80px rgba(232, 115, 42, 0.08);
+}
+
+/* Section styles */
+.section-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 6vw, 64px);
+}
+
+/* Magnetic button */
+.magnetic-btn {
+  position: relative;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Timeline line glow */
+.timeline-line {
+  position: relative;
+}
+
+.timeline-line::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, #E8732A, transparent);
+  opacity: 0.6;
+}
+
+/* Card hover tilt */
+.card-tilt {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
