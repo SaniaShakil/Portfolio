@@ -10,16 +10,16 @@ const config: Config = {
     extend: {
       colors: {
         bg: {
-          primary: '#1C1C1E',
-          surface: '#232326',
-          card: '#2A2A2F',
-          'card-hover': '#333338',
+          primary: '#0F172A',
+          surface: '#1A2E1A',
+          card: '#1F3A1F',
+          'card-hover': '#2A4D2A',
         },
         accent: {
-          DEFAULT: '#E8732A',
-          hover: '#F08C4A',
-          glow: 'rgba(232, 115, 42, 0.08)',
-          dim: 'rgba(232, 115, 42, 0.25)',
+          DEFAULT: '#10B981',
+          hover: '#34D399',
+          glow: 'rgba(16, 185, 129, 0.08)',
+          dim: 'rgba(16, 185, 129, 0.25)',
         },
         text: {
           primary: '#F0EFEB',

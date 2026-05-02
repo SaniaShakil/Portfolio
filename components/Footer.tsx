@@ -16,7 +16,7 @@ export default function Footer(): JSX.Element {
             </span>
             <span className="text-text-muted hidden sm:inline">—</span>
             <span className="text-text-secondary hidden sm:inline">
-              Kerim Girgin
+              Sania Shakil
             </span>
           </div>
 

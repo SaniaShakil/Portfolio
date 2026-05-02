@@ -78,7 +78,7 @@ export default function Navbar(): JSX.Element {
               else window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
           >
-            KG.
+            SS.
           </a>
 
           {/* Desktop nav links */}

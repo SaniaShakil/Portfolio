@@ -11,8 +11,8 @@ export default function BlueprintGrid(): JSX.Element {
         className="absolute inset-0 opacity-[0.04]"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(232,115,42,1) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(232,115,42,1) 1px, transparent 1px)
+            linear-gradient(rgba(16,185,129,1) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(16,185,129,1) 1px, transparent 1px)
           `,
           backgroundSize: '40px 40px',
         }}
@@ -22,8 +22,8 @@ export default function BlueprintGrid(): JSX.Element {
         className="absolute inset-0 opacity-[0.06]"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(232,115,42,1) 1.5px, transparent 1.5px),
-            linear-gradient(90deg, rgba(232,115,42,1) 1.5px, transparent 1.5px)
+            linear-gradient(rgba(16,185,129,1) 1.5px, transparent 1.5px),
+            linear-gradient(90deg, rgba(16,185,129,1) 1.5px, transparent 1.5px)
           `,
           backgroundSize: '200px 200px',
         }}
@@ -47,7 +47,7 @@ export default function BlueprintGrid(): JSX.Element {
       <div
         className="absolute inset-0"
         style={{
-          background: 'radial-gradient(ellipse 80% 60% at 50% 40%, transparent 40%, rgba(28,28,30,0.8) 100%)',
+          background: 'radial-gradient(ellipse 80% 60% at 50% 40%, transparent 40%, rgba(15,23,42,0.8) 100%)',
         }}
       />
     </div>

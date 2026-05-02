@@ -210,7 +210,7 @@ export const it: Translation = {
     label: 'Contatto',
     heading: "Connettiamoci.",
     subheading: "Hai un progetto o hai bisogno di competenza in ingegneria ambientale? Sono aperta a opportunità.",
-    email: 'sania.shakil@example.com',
+    email: 'sania.shakil@mail.polimi.it',
     form: {
       name: 'Il tuo nome',
       emailField: 'La tua email',

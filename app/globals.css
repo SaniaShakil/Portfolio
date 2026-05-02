@@ -15,14 +15,18 @@
   }
 
   body {
-    background-color: #1C1C1E;
+    background-color: #0F172A;
+    background-image: 
+      radial-gradient(circle at 20% 80%, rgba(16, 185, 129, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(34, 197, 94, 0.06) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, rgba(5, 150, 105, 0.05) 0%, transparent 50%);
     color: #F0EFEB;
     font-family: var(--font-jakarta), system-ui, sans-serif;
     overflow-x: hidden;
   }
 
   ::selection {
-    background-color: rgba(232, 115, 42, 0.3);
+    background-color: rgba(16, 185, 129, 0.3);
     color: #F0EFEB;
   }
 
@@ -31,16 +35,16 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: #1C1C1E;
+    background: #0F172A;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #3D3D43;
+    background: #2A4D2A;
     border-radius: 3px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #E8732A;
+    background: #10B981;
   }
 }
 
@@ -63,7 +67,7 @@
   width: 0.7em;
   height: 1.4em;
   margin: 0 1px;
-  background: #2A2A2F;
+  background: #1F3A1F;
   border-radius: 2px;
   overflow: hidden;
   font-family: var(--font-jetbrains), monospace;
@@ -80,7 +84,7 @@
   right: 0;
   top: 50%;
   height: 1px;
-  background: rgba(28, 28, 30, 0.6);
+  background: rgba(15, 23, 42, 0.6);
 }
 
 @keyframes solariFlip {
@@ -94,8 +98,8 @@
 }
 
 /* Ambient glow */
-.glow-amber {
-  box-shadow: 0 0 60px rgba(232, 115, 42, 0.08), 0 0 120px rgba(232, 115, 42, 0.04);
+.glow-green {
+  box-shadow: 0 0 60px rgba(16, 185, 129, 0.08), 0 0 120px rgba(16, 185, 129, 0.04);
 }
 
 .glow-amber-strong {
@@ -127,7 +131,7 @@
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(to bottom, transparent, #E8732A, transparent);
+  background: linear-gradient(to bottom, transparent, #10B981, transparent);
   opacity: 0.6;
 }
 

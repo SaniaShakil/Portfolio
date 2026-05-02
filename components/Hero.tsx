@@ -57,7 +57,7 @@ export default function Hero() {
           className="absolute -top-40 -left-40 w-[700px] h-[700px] rounded-full animate-float"
           style={{
             background:
-              'radial-gradient(circle at center, rgba(232,115,42,0.10) 0%, rgba(232,115,42,0.03) 50%, transparent 70%)',
+              'radial-gradient(circle at center, rgba(16,185,129,0.10) 0%, rgba(16,185,129,0.03) 50%, transparent 70%)',
             animationDelay: '0s',
           }}
         />
@@ -65,7 +65,7 @@ export default function Hero() {
           className="absolute -bottom-60 -right-40 w-[600px] h-[600px] rounded-full animate-float"
           style={{
             background:
-              'radial-gradient(circle at center, rgba(232,115,42,0.06) 0%, rgba(232,115,42,0.02) 50%, transparent 70%)',
+              'radial-gradient(circle at center, rgba(34,197,94,0.06) 0%, rgba(34,197,94,0.02) 50%, transparent 70%)',
             animationDelay: '3s',
           }}
         />

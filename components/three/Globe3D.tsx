@@ -67,7 +67,7 @@ function CityDot({ position }: { position: THREE.Vector3 }): JSX.Element {
   return (
     <mesh position={position}>
       <sphereGeometry args={[0.022, 8, 8]} />
-      <meshBasicMaterial color="#E8732A" transparent opacity={0.9} />
+      <meshBasicMaterial color="#10B981" transparent opacity={0.9} />
     </mesh>
   );
 }
@@ -92,7 +92,7 @@ function FlightArc({
   const midVec   = arcMidPoint(startVec, endVec);
 
   // 8-digit hex encodes alpha — works with three's ColorRepresentation in LineMaterial
-  const colorWithAlpha = `#E8732A${alphaHex}`;
+  const colorWithAlpha = `#10B981${alphaHex}`;
 
   return (
     <group>
@@ -127,7 +127,7 @@ function GlobeWireframe(): JSX.Element {
       <mesh>
         <sphereGeometry args={[GLOBE_RADIUS, 32, 32]} />
         <meshBasicMaterial
-          color="#E8732A"
+          color="#10B981"
           wireframe
           transparent
           opacity={0.13}
@@ -138,7 +138,7 @@ function GlobeWireframe(): JSX.Element {
       <mesh>
         <sphereGeometry args={[GLOBE_RADIUS, 32, 32]} />
         <meshBasicMaterial
-          color="#E8732A"
+          color="#10B981"
           transparent
           opacity={0.03}
           side={THREE.BackSide}

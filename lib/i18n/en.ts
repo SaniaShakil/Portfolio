@@ -282,7 +282,7 @@ export const en: Translation = {
     label: 'Contact',
     heading: "Let's connect.",
     subheading: "Have a project or need expertise in environmental engineering? I'm open to opportunities.",
-    email: 'sania.shakil@example.com',
+    email: 'sania.shakil@mail.polimi.it',
     form: {
       name: 'Your name',
       emailField: 'Your email',

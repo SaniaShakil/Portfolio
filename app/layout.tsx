@@ -22,25 +22,25 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Kerim Girgin | Civil Engineer',
+  title: 'Sania Shakil | Environmental Engineer',
   description:
-    'Civil Engineer specializing in structural design, reinforced concrete, and construction management. ITU graduate building infrastructure in Turkey.',
+    'Environmental Engineer specializing in sustainable practices, water treatment, and pollution control. Politecnico di Milano graduate working towards a greener future.',
   keywords: [
-    'civil engineer',
-    'structural engineering',
-    'reinforced concrete',
-    'construction',
-    'ITU',
+    'environmental engineer',
+    'sustainable development',
+    'water treatment',
+    'pollution control',
+    'Politecnico di Milano',
     'AutoCAD',
     'ETABS',
-    'Turkey',
+    'Italy',
   ],
-  authors: [{ name: 'Kerim Girgin' }],
+  authors: [{ name: 'Sania Shakil' }],
   icons: {
     icon: '/favicon.svg',
   },
   openGraph: {
-    title: 'Kerim Girgin | Civil Engineer',
+    title: 'Sania Shakil | Environmental Engineer',
     description: 'Building infrastructure that stands the test of time.',
     type: 'website',
   },

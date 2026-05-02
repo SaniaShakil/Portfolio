@@ -19,7 +19,7 @@ function buildParticlesOptions(count: number): ISourceOptions {
     fullScreen: { enable: false },
     fpsLimit: 60,
     particles: {
-      color: { value: '#E8732A' },
+      color: { value: '#10B981' },
       number: {
         value: count,
         density: { enable: false },
@@ -40,7 +40,7 @@ function buildParticlesOptions(count: number): ISourceOptions {
       },
       links: {
         enable: true,
-        color: '#E8732A',
+        color: '#10B981',
         opacity: 0.06,
         distance: 120,
         width: 1,

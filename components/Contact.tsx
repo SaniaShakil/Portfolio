@@ -113,7 +113,7 @@ export default function Contact(): JSX.Element {
           {/* Social links */}
           <div className="flex items-center justify-center gap-4 mb-8">
             <a
-              href="https://www.linkedin.com/in/kerim-girgin-0b63b7237"
+              href="https://www.linkedin.com/in/sania-shakil-0a8177136/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -123,7 +123,7 @@ export default function Contact(): JSX.Element {
             </a>
 
             <a
-              href="https://wa.me/905434632096"
+              href="https://wa.me/393394150500"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"
@@ -133,7 +133,7 @@ export default function Contact(): JSX.Element {
             </a>
 
             <a
-              href="mailto:kerimgirgin@outlook.com"
+              href="mailto:sania.shakil@mail.polimi.it"
               aria-label="Email"
               className="w-12 h-12 flex items-center justify-center rounded-xl bg-bg-card border border-border text-text-secondary hover:text-accent hover:border-accent/30 transition-all"
             >
