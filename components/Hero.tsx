@@ -130,8 +130,9 @@ export default function Hero() {
             className="flex flex-wrap items-center justify-center gap-3 mt-1"
           >
             <a
-              href="/cv.pdf"
-              download
+              href="https://drive.google.com/file/d/1ilq-fvk1PslwIUCT7o56l0CqdIilw6fs/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer noopener"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-accent text-bg-primary font-body font-semibold text-sm hover:bg-accent-hover active:scale-95 transition-all duration-200 min-h-[44px]"
               aria-label={t.hero.downloadCv}
             >
