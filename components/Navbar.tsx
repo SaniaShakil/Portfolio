@@ -41,7 +41,6 @@ export default function Navbar(): JSX.Element {
     { label: t.nav.experience, href: '#experience' },
     { label: t.nav.education, href: '#education' },
     { label: t.nav.projects, href: '#projects' },
-    { label: t.nav.references, href: '#references' },
     { label: t.nav.contact, href: '#contact' },
   ];
 

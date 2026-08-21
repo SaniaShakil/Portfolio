@@ -8,7 +8,6 @@ export const it: Translation = {
     projects: 'Progetti',
     contact: 'Contatto',
     letsTalk: 'Parliamo',
-    references: 'Riferimenti',
     education: 'Istruzione',
   },
   hero: {
@@ -65,6 +64,7 @@ export const it: Translation = {
         items: [
           { name: 'CROPWAT', context: 'Modellazione delle esigenze idriche delle colture' },
           { name: 'CLIMWAT', context: 'Analisi dei dati climatici' },
+          { name: 'QGIS', context: 'Analisi spaziale e mappatura' },
         ],
       },
       {
@@ -170,6 +170,7 @@ export const it: Translation = {
       items: [
         { language: 'Inglese', level: 'Fluente' },
         { language: 'Hindi', level: 'Madrelingua' },
+        { language: 'Italiano', level: 'A1 Principiante' },
       ],
     },
   },
@@ -200,11 +201,6 @@ export const it: Translation = {
         badge: 'Akademik',
       },
     ],
-  },
-  references: {
-    label: 'Referanslar',
-    heading: 'Profesyonel referanslar',
-    entries: [],
   },
   contact: {
     label: 'Contatto',

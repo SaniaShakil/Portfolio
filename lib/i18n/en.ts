@@ -8,7 +8,6 @@ export const en: Translation = {
     projects: 'Projects',
     contact: 'Contact',
     letsTalk: "Let's Talk",
-    references: 'References',
     education: 'Education',
   },
   hero: {
@@ -65,6 +64,7 @@ export const en: Translation = {
         items: [
           { name: 'CROPWAT', context: 'Crop water requirement modeling' },
           { name: 'CLIMWAT', context: 'Climate data analysis' },
+          { name: 'QGIS', context: 'Spatial analysis and mapping' },
         ],
       },
       {
@@ -91,6 +91,7 @@ export const en: Translation = {
           'Analysed the Sewage Treatment Plant (STP) processes and carried out the quality check of treated effluent for irrigation purposes.',
         ],
         tech: ['Sewage Treatment', 'Water Quality Analysis'],
+        certificate: '/Certificates/Cert%20Summer%20training.pdf',
       },
       {
         title: 'Human Resource Intern',
@@ -137,11 +138,12 @@ export const en: Translation = {
         courses: [],
       },
     ],
-    languages: {
+      languages: {
       label: 'Languages',
       items: [
-        { language: 'English', level: 'Fluent' },
+        { language: 'English', level: 'Fluent (IELTS 7.5)' },
         { language: 'Hindi', level: 'Native' },
+        { language: 'Italian', level: 'A1 Beginner' },
       ],
     },
   },
@@ -160,6 +162,7 @@ export const en: Translation = {
         tech: ['Green Infrastructure', 'Urban Planning'],
         featured: true,
         badge: 'Climate & Global Changes',
+        researchPaper: '/Research%20Papers/Exploring%20Green%20Infrastructure.pdf',
       },
       {
         name: 'Water and Food Security in Egypt',
@@ -170,6 +173,7 @@ export const en: Translation = {
         tech: ['Water Security', 'Food Security'],
         featured: true,
         badge: 'Water and Food Security',
+        researchPaper: '/Research%20Papers/Water%20%26%20Food%20Security%20in%20Egypt.pdf',
       },
       {
         name: 'Solid Waste Management',
@@ -180,6 +184,7 @@ export const en: Translation = {
         tech: ['Waste Management', 'Life Cycle Assessment'],
         featured: true,
         badge: 'Solid Waste Management',
+        researchPaper: '/Research%20Papers/Solid%20Waste%20Management.pdf',
       },
       {
         name: 'Prediction of Grade of Concrete using Machine Learning',
@@ -190,6 +195,7 @@ export const en: Translation = {
         tech: ['Machine Learning', 'Concrete Engineering'],
         featured: true,
         badge: 'Machine Learning in Engineering',
+        researchPaper: '/Research%20Papers/Prediction%20of%20Grade%20of%20Concrete%20using%20Machine%20Learning.pdf',
       },
       {
         name: 'DECO: Design Community Ecology',
@@ -200,6 +206,7 @@ export const en: Translation = {
         tech: ['Urban Design', 'Ecology'],
         featured: true,
         badge: 'Regenerative Urban Design',
+        researchPaper: '/Research%20Papers/DECO%20Regenrative%20Urban%20Design.pdf',
       },
       {
         name: 'AutoCAD Workshop',
@@ -250,6 +257,7 @@ export const en: Translation = {
         tech: ['Waste-to-Energy'],
         featured: false,
         badge: 'Research Paper',
+        researchPaper: '/Research%20Papers/Waste%20to%20Energy%20Technologies.pdf',
       },
       {
         name: 'Geospatial Technology for Hydrological Modelling',
@@ -272,11 +280,6 @@ export const en: Translation = {
         badge: 'ISRO Project',
       },
     ],
-  },
-  references: {
-    label: 'References',
-    heading: 'Professional References',
-    entries: [],
   },
   contact: {
     label: 'Contact',

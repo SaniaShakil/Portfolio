@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { ExternalLink } from 'lucide-react';
 import { useLanguage } from '@/lib/i18n/LanguageContext';
 import SectionHeading from './ui/SectionHeading';
 
@@ -112,6 +113,17 @@ export default function Experience(): React.ReactElement {
                         {tech}
                       </span>
                     ))}
+                    {entry.certificate && (
+                      <a
+                        href={entry.certificate}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-1.5 text-accent text-xs px-3 py-1 rounded-full border border-accent/30 hover:border-accent hover:text-accent-hover transition-colors"
+                      >
+                        <ExternalLink size={13} />
+                        <span>View certificate</span>
+                      </a>
+                    )}
                   </div>
                 </div>
               </motion.div>

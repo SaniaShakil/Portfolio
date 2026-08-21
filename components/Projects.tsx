@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Ruler, User } from 'lucide-react';
+import { ExternalLink, Ruler, User } from 'lucide-react';
 import { useLanguage } from '@/lib/i18n/LanguageContext';
 import SectionHeading from './ui/SectionHeading';
 
@@ -147,6 +147,17 @@ export default function Projects(): React.ReactElement {
                         <Ruler size={14} className="text-accent" />
                         <span>{project.scale}</span>
                       </div>
+                      {project.researchPaper && (
+                        <a
+                          href={project.researchPaper}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-1.5 text-accent text-xs hover:text-accent-hover transition-colors"
+                        >
+                          <ExternalLink size={14} />
+                          <span>Read research paper</span>
+                        </a>
+                      )}
                     </div>
                   </div>
                 </motion.div>

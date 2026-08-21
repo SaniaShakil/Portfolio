@@ -6,7 +6,6 @@ export interface Translation {
     projects: string;
     contact: string;
     letsTalk: string;
-    references: string;
     education: string;
   };
   hero: {
@@ -55,6 +54,7 @@ export interface Translation {
       current: boolean;
       highlights: string[];
       tech: string[];
+      certificate?: string;
     }>;
   };
   education: {
@@ -90,15 +90,7 @@ export interface Translation {
       tech: string[];
       featured: boolean;
       badge: string;
-    }>;
-  };
-  references: {
-    label: string;
-    heading: string;
-    entries: Array<{
-      name: string;
-      title: string;
-      institution: string;
+      researchPaper?: string;
     }>;
   };
   contact: {

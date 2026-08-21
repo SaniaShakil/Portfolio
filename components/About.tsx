@@ -14,7 +14,11 @@ function parseStatNumber(value: string): number {
 
 /** Animated counter that counts from 0 to `target` when it enters the viewport. */
 function AnimatedCounter({ value }: { value: string }) {
-  const target = parseStatNumber(value);
+  // Extract the numeric portion as a string to preserve decimal precision
+  const match = value.match(/^([0-9]+(?:\.[0-9]+)?)/);
+  const rawNumberStr = match ? match[1] : '0';
+  const target = parseFloat(rawNumberStr);
+  const decimalPlaces = rawNumberStr.includes('.') ? rawNumberStr.split('.')[1].length : 0;
   // Preserve the suffix (everything after the number) for display
   const suffix = value.replace(/^[0-9.]+/, '');
 
@@ -33,11 +37,8 @@ function AnimatedCounter({ value }: { value: string }) {
 
     // Subscribe to value changes to format the display string
     const unsubscribe = motionVal.on('change', (latest) => {
-      // Match original formatting: show one decimal if target has one (e.g. 4.8)
       const formatted =
-        target % 1 !== 0
-          ? latest.toFixed(1)
-          : Math.round(latest).toString();
+        decimalPlaces > 0 ? latest.toFixed(decimalPlaces) : Math.round(latest).toString();
       setDisplay(formatted);
     });
 
@@ -45,7 +46,7 @@ function AnimatedCounter({ value }: { value: string }) {
       controls.stop();
       unsubscribe();
     };
-  }, [inView, motionVal, target]);
+  }, [inView, motionVal, target, decimalPlaces]);
 
   return (
     <span ref={ref}>
@@ -125,7 +126,9 @@ export default function About() {
                 className="bg-bg-card border border-border rounded-2xl p-6 hover:border-accent/30 transition-all duration-300"
               >
                 <div className="text-4xl font-display font-bold text-accent mb-2">
-                  <AnimatedCounter value={stat.value} />
+                  {(/^[0-9]/.test(stat.value)
+                    ? <AnimatedCounter value={stat.value} />
+                    : stat.value)}
                 </div>
                 <div className="text-sm text-text-secondary">{stat.label}</div>
               </motion.div>
